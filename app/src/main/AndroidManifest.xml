@@ -66,7 +66,13 @@
             android:theme="@style/actionBarTheme" />
         <activity
             android:name=".MainActivity"
-            android:exported="false" />
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".tallycounter.tallyCounter_MainActivity"
             android:exported="false"
@@ -77,21 +83,21 @@
             android:exported="false"
             android:parentActivityName=".MainActivity"
             android:theme="@style/actionBarTheme" />
-        <activity
-            android:name=". "
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+<!--        <activity-->
+<!--            android:name=".LoginActivity"-->
+<!--            android:exported="true">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
 
-            <meta-data
-                android:name="android.app.shortcuts"
-                android:resource="@xml/shortcuts" />
-            <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
-            <meta-data android:name="com.facebook.sdk.ClientToken" android:value="@string/facebook_client_token"/>
-        </activity>
+<!--            <meta-data-->
+<!--                android:name="android.app.shortcuts"-->
+<!--                android:resource="@xml/shortcuts" />-->
+<!--&lt;!&ndash;            <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <meta-data android:name="com.facebook.sdk.ClientToken" android:value="@string/facebook_client_token"/>&ndash;&gt;-->
+<!--        </activity>-->
 
         <meta-data
             android:name="preloaded_fonts"

@@ -11,10 +11,10 @@
     <color name="teal">#0DAC51</color>
     <color name="darkGreen">#018C3C</color>
 
-    <color name="deepBlue">#182834</color>
-    <color name="deepBlue2">#304351</color>
-    <color name="deepBlue3">#385362</color>
-    <color name="buttonBlue">#67A3AF</color>
-    <color name="ice">#BADDE2</color>
+    <color name="deepBlue">#74C3FF</color>
+    <color name="deepBlue2">#3C9BE3</color>
+    <color name="deepBlue3">#1873B8</color>
+    <color name="buttonBlue">#034F88</color>
+    <color name="ice">#000000</color>
 
 </resources>

@@ -1,6 +1,7 @@
 package com.example.mypages.rssFeed;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -32,11 +33,11 @@ public class RssFeedActivity extends AppCompatActivity {
         setContentView(R.layout.activity_rss_feed);
 
         recyclerView = findViewById(R.id.recyclerView_rss);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.setLayoutManager(new GridLayoutManager(this, 2));
         adapter = new Adapter_Rss(this, rssFeedList);
         recyclerView.setAdapter(adapter);
 
-        new FetchRssFeedTask().execute("https://timesofindia.indiatimes.com/rssfeedstopstories.cms");
+        new FetchRssFeedTask().execute("https://timesofindia.indiatimes.com/rssfeeds/1898055.cms");
     }
 
     private class FetchRssFeedTask extends AsyncTask<String, Void, List<RssFeed>> {
